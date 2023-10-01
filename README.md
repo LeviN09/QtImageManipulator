@@ -1,3 +1,1 @@
 # QtImageManipulator
-# QtImageManipulator
-# QtImageManipulator
