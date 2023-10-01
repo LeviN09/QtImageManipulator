@@ -1,0 +1,169 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-37866fb4dc8866e98426.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ImageManipulation",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-Debug-cbcaf13e1224b2b3b87b.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-Debug-668c0236e1dff29cb13d.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_module-Debug-8f52af5f14b7707c6591.json",
+					"name" : "all_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-Debug-c2f962deaaa2f843eac0.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appImageManipulation::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appImageManipulation-Debug-3ed89f29aea10290291c.json",
+					"name" : "appImageManipulation",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appImageManipulation_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appImageManipulation_autogen-Debug-8107245b6feba6d2c441.json",
+					"name" : "appImageManipulation_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appImageManipulation_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appImageManipulation_autogen_timestamp_deps-Debug-c26e233fb9852e2419ce.json",
+					"name" : "appImageManipulation_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appImageManipulation_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appImageManipulation_qmlimportscan-Debug-83383494aa157c845e6a.json",
+					"name" : "appImageManipulation_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appImageManipulation_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appImageManipulation_qmllint-Debug-2635c64d11eaaf52fc02.json",
+					"name" : "appImageManipulation_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appImageManipulation_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appImageManipulation_qmllint_json-Debug-15c1c20e8ccf7cc37ced.json",
+					"name" : "appImageManipulation_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appImageManipulation_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appImageManipulation_qmllint_module-Debug-057f4b7575cb9e7d0c5a.json",
+					"name" : "appImageManipulation_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appImageManipulation_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appImageManipulation_qmltyperegistration-Debug-50e1273538f4941818e6.json",
+					"name" : "appImageManipulation_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appImageManipulation_tooling::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appImageManipulation_tooling-Debug-7b3b615631f6dd3981a5.json",
+					"name" : "appImageManipulation_tooling",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/levi/Documents/Programming/Work/QtProj/build-ImageManipulation-Desktop_Qt_6_5_2_GCC_64bit-Debug",
+		"source" : "/home/levi/Documents/Programming/Work/QtProj/ImageManipulation"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

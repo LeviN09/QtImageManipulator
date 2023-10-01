@@ -1,0 +1,17 @@
+{
+    "classes": [
+        {
+            "className": "ImageLoader",
+            "object": true,
+            "qualifiedClassName": "ImageLoader",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QQuickImageProvider"
+                }
+            ]
+        }
+    ],
+    "inputFile": "ImageLoader.h",
+    "outputRevision": 68
+}

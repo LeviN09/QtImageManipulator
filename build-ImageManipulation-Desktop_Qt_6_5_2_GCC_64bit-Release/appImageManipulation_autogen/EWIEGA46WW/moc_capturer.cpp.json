@@ -1,0 +1,17 @@
+{
+    "classes": [
+        {
+            "className": "Capturer",
+            "object": true,
+            "qualifiedClassName": "Capturer",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "capturer.h",
+    "outputRevision": 68
+}

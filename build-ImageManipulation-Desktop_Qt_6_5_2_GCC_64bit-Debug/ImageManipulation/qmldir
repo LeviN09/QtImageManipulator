@@ -1,0 +1,5 @@
+module ImageManipulation
+typeinfo appImageManipulation.qmltypes
+prefer :/ImageManipulation/
+Main 1.0 Main.qml
+

@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/ImageManipulation">/home/levi/Documents/Programming/Work/QtProj/build-ImageManipulation-Desktop_Qt_6_5_2_GCC_64bit-Release/ImageManipulation</file>
+
+  </qresource>
+</RCC>

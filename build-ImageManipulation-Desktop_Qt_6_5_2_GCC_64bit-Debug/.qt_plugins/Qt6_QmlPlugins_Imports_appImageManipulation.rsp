@@ -1,0 +1,14 @@
+-rootPath
+/home/levi/Documents/Programming/Work/QtProj/ImageManipulation
+-cmake-output
+-output-file
+/home/levi/Documents/Programming/Work/QtProj/build-ImageManipulation-Desktop_Qt_6_5_2_GCC_64bit-Debug/.qt_plugins/Qt6_QmlPlugins_Imports_appImageManipulation.cmake
+-importPath
+/home/levi/Documents/Programming/Work/QtProj/build-ImageManipulation-Desktop_Qt_6_5_2_GCC_64bit-Debug/ImageManipulation
+-importPath
+/home/levi/Documents/Programming/Work/QtProj/build-ImageManipulation-Desktop_Qt_6_5_2_GCC_64bit-Debug
+-importPath
+/home/levi/Qt/6.5.2/gcc_64/./qml
+-qrcFiles
+/home/levi/Documents/Programming/Work/QtProj/build-ImageManipulation-Desktop_Qt_6_5_2_GCC_64bit-Debug/.rcc/qmake_ImageManipulation.qrc
+/home/levi/Documents/Programming/Work/QtProj/build-ImageManipulation-Desktop_Qt_6_5_2_GCC_64bit-Debug/.rcc/appImageManipulation_raw_qml_0.qrc
