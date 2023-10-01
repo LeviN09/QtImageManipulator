@@ -1,7 +1,6 @@
 <RCC>
   <qresource prefix="/ImageManipulation/">
     <file alias="Main.qml">/home/levi/Documents/Programming/Work/QtProj/ImageManipulation/Main.qml</file>
-    <file alias="notfound.webp">/home/levi/Documents/Programming/Work/QtProj/ImageManipulation/notfound.webp</file>
   </qresource>
 </RCC>
 
