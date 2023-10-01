@@ -6,27 +6,32 @@ import Qt5Compat.GraphicalEffects
 import QtQuick.Dialogs
 import ImageLoader
 
-Window {
+Window
+{
     visible: true
     width: 600
     height: 500
     title: "Image Loader"
 
-    Rectangle {
+    Rectangle
+    {
         color: "lightgray"
         anchors.fill: parent
 
-        ColumnLayout {
+        ColumnLayout
+        {
             anchors.fill: parent
 
-            TextField {
+            TextField
+            {
                 id: urlInput
                 Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
                 placeholderText: "Enter Image URL"
                 Layout.fillWidth: true
             }
 
-            Button {
+            Button
+            {
                 text: "Load Image"
                 Layout.minimumHeight: 20
                 Layout.minimumWidth: 20
@@ -40,38 +45,51 @@ Window {
 
                     if (loadedImage.status === Image.Error)
                     {
-                        urlInput.text = "Error loading image from URL";
+                        errorText.visible = true;
+                        errorText.text = "Error loading image from URL";
+                    }
+                    else
+                    {
+                        errorText.visible = false;
                     }
                 }
             }
 
-            RowLayout {
+            RowLayout
+            {
                 Layout.fillWidth: true
                 Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
-                ColumnLayout {
-                    Slider {
+
+                ColumnLayout
+                {
+                    Slider
+                    {
                         id: hue
-                        stepSize: 0.1
+                        stepSize: 0.01
                         from: 0
                         to: 1
-
                     }
-                    Text {
+
+                    Text
+                    {
                         text: "Hue"
                         Layout.fillWidth: false
                         Layout.alignment: Qt.AlignHCenter | Qt.AlignTop
-
                     }
                 }
 
-                ColumnLayout {
-                    Slider {
+                ColumnLayout
+                {
+                    Slider
+                    {
                         id: sat
-                        stepSize: 0.1
+                        stepSize: 0.01
                         from: 0
                         to: 1
                     }
-                    Text {
+
+                    Text
+                    {
                         text: "Saturation"
                         Layout.fillWidth: false
                         Layout.alignment: Qt.AlignHCenter | Qt.AlignTop
@@ -79,14 +97,18 @@ Window {
                     }
                 }
 
-                ColumnLayout {
-                    Slider {
+                ColumnLayout
+                {
+                    Slider
+                    {
                         id: light
-                        stepSize: 0.1
+                        stepSize: 0.01
                         from: -1
                         to: 1
                     }
-                    Text {
+
+                    Text
+                    {
                         text: "Lightness"
                         Layout.fillWidth: false
                         Layout.alignment: Qt.AlignHCenter | Qt.AlignTop
@@ -95,7 +117,8 @@ Window {
                 }
             }
 
-            Item {
+            Item
+            {
                 id: item1
                 width: 400
                 height: 300
@@ -106,7 +129,9 @@ Window {
                 Layout.maximumWidth: 400
                 Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
                 Layout.fillHeight: true
-                Image {
+
+                Image
+                {
                     id: loadedImage
                     visible: true
                     anchors.fill: parent
@@ -120,7 +145,8 @@ Window {
 
                 }
 
-                Colorize {
+                Colorize
+                {
                     id: colorize
                     anchors.fill: loadedImage
                     source: loadedImage
@@ -130,51 +156,52 @@ Window {
                 }
             }
 
-            RowLayout {
+            Text
+            {
+                visible: false
+                horizontalAlignment: Text.AlignHCenter
                 Layout.fillWidth: true
                 Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
-                Button {
+                id: errorText
+            }
+
+            RowLayout
+            {
+                Layout.fillWidth: true
+                Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
+
+                Button
+                {
                     text: "Save Image"
                     Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
-                    onClicked: {
-                        try {
-                        colorize.grabToImage(function(result) {
-                                                   result.saveToFile(place.text);
-                                               });
-                        }
-                        catch (e) {
-
-                        }
+                    onClicked:
+                    {
+                        colorize.grabToImage(function(result)
+                        {
+                            if(!result.saveToFile(place.text))
+                            {
+                                errorText.visible = true;
+                                errorText.text = "Wrong save format";
+                            }
+                            else
+                            {
+                                errorText.visible = false;
+                            }
+                        });
                     }
                 }
 
-                TextField {
+                TextField
+                {
                     id: place
-                    placeholderText: "Enter Image Save Name"
+                    placeholderText: "Enter Save Path"
                     Layout.fillWidth: true
                     Layout.minimumWidth: 300
                     Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
 
                 }
             }
-
-
-
-
         }
-    }
-
-
-    Popup {
-        id: popup
-        x: 100
-        y: 100
-        width: 200
-        height: 300
-        modal: true
-        focus: true
-        closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutsideParent
-
     }
 }
 
