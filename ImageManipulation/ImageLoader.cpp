@@ -8,7 +8,8 @@ ImageLoader::ImageLoader(QObject *parent) : QQuickImageProvider(QQuickImageProvi
 {
 }
 
-QImage ImageLoader::requestImage(const QString &id, QSize *size, const QSize &requestedSize) {
+QImage ImageLoader::requestImage(const QString &id, QSize *size, const QSize &requestedSize)
+{
     QUrl url(id);
     QNetworkRequest request(url);
     QNetworkReply *reply = networkManager.get(request);
@@ -23,7 +24,8 @@ QImage ImageLoader::requestImage(const QString &id, QSize *size, const QSize &re
         QImage image;
         image.loadFromData(imageData);
 
-        if (size) {
+        if (size)
+        {
             *size = image.size();
         }
 
